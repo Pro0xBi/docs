@@ -41,14 +41,20 @@ plugins:
   - search
   - awesome-pages
   - mkdocs-video
+  - i18n:
+      default_language: en
+      languages:
+        zh:
+          name: Chinese (Simplified)
+          build: true
 extra:
   generator: false
   alternate:
     - name: English
-      link: /docs
+      link: /docs/
       lang: en
     - name: Chinese (Simplified)
-      link: /zh/
+      link: /docs/zh/
       lang: zh
   analytics:
     provider: posthog
